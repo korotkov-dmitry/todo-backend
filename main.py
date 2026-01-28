@@ -12,7 +12,8 @@ from resources import Entry
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://localhost"  # адрес на котором работает фронт-энд
+    "http://localhost",  # адрес на котором работает фронт-энд
+    "http://158.160.124.254"
 ]
 
 app = FastAPI(title='Todo Backend',
