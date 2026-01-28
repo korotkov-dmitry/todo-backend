@@ -33,7 +33,7 @@ class User(BaseModel):
     birthdate: date
 
 class Settings(BaseSettings):
-    data_folder: str='tmp'
+    data_folder: str='.'
 
 settings = Settings()
 
