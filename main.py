@@ -12,7 +12,7 @@ from resources import Entry
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "https://wexler.io"  # адрес на котором работает фронт-энд
+    "http://localhost"  # адрес на котором работает фронт-энд
 ]
 
 app = FastAPI(title='Todo Backend',
@@ -68,5 +68,5 @@ async def save_entries(data: List[dict]):
     entry_manager.save()
     return {'status': 'success'}
 
-if __name__ == '__main__':
-    uvicorn.run("main:app", host='localhost', port=8000, reload=True)
+# if __name__ == '__main__':
+#     uvicorn.run("main:app", host='localhost', port=8000, reload=True)
